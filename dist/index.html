@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Example Website</title>
+    <title>Demo Recipes Hub</title>
     <link rel="stylesheet" href="index.css">
   <script defer src="index.bundle.js"></script><link href="index.css" rel="stylesheet"></head>
   <body>
-    <header class="header">
-      <nav class="border-gray-200 p-3">
+    <header id="header">
+      <nav class="border-b border-gray-200 p-3">
         <div class="nav-main">
           <div class="left-container">
             <a class="brand-link" href="/">
@@ -28,21 +28,21 @@
                     <a href="/contact.html">Contact</a>
                 </li>
             </ul>
-        </div>
+          </div>
         </div>
       </nav>
     </header>
 
     <main class="introduction-block container mx-auto p-6">
-      <section class="p-6 rounded-lg shadow-lg">
+      <section class="p-6 rounded-lg shadow-lg bg-white">
           <h2 class="introduction-title text-3xl mb-4">
             Welcome to Demo Recipes Hub!
           </h2>
           <p class="text-lg mb-4">
-            Dive into a bunch of tasty recipes shared by fellow food lovers from all over. Whether you’re after a quick dinner fix, a sweet treat, or something healthy, we’ve got you covered!
+            Explore a curated list of recipes shared by food lovers from all over the world. Whether looking for a quick dinner, appetizers, or treats, we’ve got you covered!
           </p>
           <p class="text-lg mb-6">
-            Browse our featured recipes, discover new favorites, and share your own culinary creations with our community.
+            Browse featured recipes, discover new favorites, and share your own recipes among the community.
           </p>
           <a class="recipes-btn bg-blue-600 px-4 py-2 rounded" href="recipes.html">
             Explore Recipes
@@ -52,24 +52,32 @@
 
     <section class="category-block container mx-auto p-6">
       <h3 class="category-title text-2xl mb-4">Browse by Category</h3>
-      <div class="categories-container">
-          <div class="bg-white border-gray-300 border p-6 rounded-md flex-none w-64">
-              <h4 class="text-xl font-semibold mb-2">Main Courses</h4>
-              <p class="mb-4">Main course entrees for any meal of the day.</p>
-              <a href="recipes.html#main-courses">Explore Main Courses</a>
-          </div>
-          <div class="bg-white border-gray-300 border p-6 rounded-md flex-none w-64">
-              <h4 class="text-xl font-semibold mb-2">Appetizers</h4>
-              <p class="mb-4">Tasty starters and snacks to get your meal off to a great start.</p>
-              <a href="recipes.html#appetizers">Explore Appetizers</a>
-          </div>
-          <div class="bg-white border-gray-300 border p-6 rounded-md flex-none w-64">
-            <h4 class="text-xl font-semibold mb-2">Desserts</h4>
-            <p class="mb-4">Sweet treats and indulgent desserts to satisfy your cravings.</p>
-            <a href="recipes.html#desserts">Explore Desserts</a>
-        </div>
-      </div>
+      <div class="browse-by-category-container card-list-container"></div>
   </section>
+
+  <section class="top-recipes-block container mx-auto p-6">
+    <h3 class="category-title text-2xl mb-4">Top Recipes</h3>
+    <table class="top-recipes-table text-sm">
+      <thead class="text-xs text-gray-700 uppercase bg-gray-50">
+        <tr>
+          <th scope="col">
+            Name
+          </th>
+          <th scope="col">
+            Rating
+          </th>
+          <th scope="col">
+            Active Time
+          </th>
+          <th scope="col">
+            Category
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+  </table>
+</section>
 
   </body>
 </html>

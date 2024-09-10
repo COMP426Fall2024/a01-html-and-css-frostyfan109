@@ -3,9 +3,84 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Example Website</title>
-    <link rel="stylesheet" href="recipes.css">
+    <title>Contact &bull; Demo Recipes Hub</title>
+    <link rel="stylesheet" href="contact.css">
   <script defer src="contact.bundle.js"></script><link href="contact.css" rel="stylesheet"></head>
   <body>
+    <header id="header">
+      <nav class="border-b border-gray-200 p-3">
+        <div class="nav-main">
+          <div class="left-container">
+            <a class="brand-link" href="/">
+              <img src="Recipe_logo.jpeg" class="mr-3 h-8" alt="Recipes Logo" />
+              <span class="brand-title text-2xl">Demo Recipes Hub</span>
+            </a>
+          </div>
+          <div class="right-container">
+            <ul class="nav-link-container">
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                <li>
+                    <a href="/recipes.html">Recipes</a>
+                </li>
+                <li>
+                    <a class="text-blue-500" href="/contact.html">Contact</a>
+                </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="px-48 my-6">
+      <div class="container px-5 py-20 flex flex-col items-center mx-auto rounded border shadow-lg bg-white">
+        <div class="flex flex-col text-center mb-6">
+          <h1 class="text-3xl text-gray-900 font-medium mb-4">Contact Us</h1>
+          <p class="mx-auto">We're always welcome to hear your thoughts and feedback.</p>
+        </div>
+        <div class="w-auto">
+          <div class="flex flex-wrap">
+            <div class="p-2 w-1/2">
+              <div>
+                <label for="name" class="text-sm text-gray-600">Full Name</label>
+                <input type="text" id="name" name="name" class="w-full bg-gray-100 rounded border border-gray-300 focus:border-blue-500 focus:bg-white focus:ring-1 focus:ring-blue-200 outline-none text-gray-700 py-1 px-3 resize-none transition-colors duration-200 ease-in-out">
+              </div>
+            </div>
+            <div class="p-2 w-1/2">
+              <div>
+                <label for="email" class="text-sm text-gray-600">Email</label>
+                <input type="email" id="email" name="email" class="w-full bg-gray-100 rounded border border-gray-300 focus:border-blue-500 focus:bg-white focus:ring-1 focus:ring-blue-200 outline-none text-gray-700 py-1 px-3 resize-none transition-colors duration-200 ease-in-out">
+              </div>
+            </div>
+            <div class="p-2 w-full">
+              <div>
+                <label for="message" class="text-sm text-gray-600">Message</label>
+                <textarea id="message" name="message" class="w-full bg-gray-100 rounded border border-gray-300 focus:border-blue-500 focus:bg-white focus:ring-1 focus:ring-blue-200 h-32 outline-none text-gray-700 py-1 px-3 resize-none transition-colors duration-200 ease-in-out"></textarea>
+              </div>
+            </div>
+            <div class="p-2 w-full flex justify-center">
+              <button class="py-2 px-6 rounded text-white bg-blue-500 hover:bg-blue-600 active:bg-blue-700">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="px-48 py-6">
+      <div class="acknowledgements">
+        <h2 class="text-xl font-medium mb-2 text-gray-900">
+          Attributions
+        </h2>
+        <ul class="list-disc list-inside space-y-2">
+          <li class="text-md">
+            <div class="-ml-2 inline">Djstoney, CC BY-SA 3.0 &lt;https://creativecommons.org/licenses/by-sa/3.0&gt;, via Wikimedia Commons</div>
+            <div class="mt-4 pl-4">
+              <a title="Djstoney, CC BY-SA 3.0 &lt;https://creativecommons.org/licenses/by-sa/3.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Recipe_logo.jpeg">
+                <img width="36" alt="Recipe logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Recipe_logo.jpeg/512px-Recipe_logo.jpeg?20120913150547">
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
   </body>
 </html>

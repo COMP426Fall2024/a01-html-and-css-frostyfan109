@@ -3,6 +3,7 @@ const StarIcon = require('./icons/star.svg')
 
 const browseByCategoryContainer = document.querySelector(".browse-by-category-container")!
 const topRecipesTBody = document.querySelector(".top-recipes-block tbody")!
+const columnSortSelect = document.querySelector<HTMLSelectElement>(".category-column-sort")!
 
 const createTopRecipeElement = (recipe: IRecipe) => {
     const tr = document.createElement("tr")
@@ -68,3 +69,17 @@ const createCategoryCard = (category: ICategory) => {
 categories.forEach((category) => {
     browseByCategoryContainer.appendChild(createCategoryCard(category))
 })
+
+// columnSortSelect.addEventListener("change", () => {
+//     const value = columnSortSelect.value
+//     const items = Array.from(topRecipesTBody.children)
+//     items.sort((a, b) => {
+//         const item = recipes.find((r) => r.name === )
+//         const aValue = (a as any)[value]
+//         const bValue = (b as any)[value]
+//         if (value === "name") return aValue.localeCompare(bValue)
+//         if (value === "rating") return bValue - aValue
+//         if (value === "activeTime") return bValue - aValue
+//         if (value === "category") return aValue.name.localeCompare(bValue.name)
+//     })
+// })

@@ -11,7 +11,7 @@
       <nav class="border-b border-gray-200 p-3">
         <div class="nav-main">
           <div class="left-container">
-            <a class="brand-link" href="/">
+            <a class="brand-link" href="./">
               <img src="Recipe_logo.jpeg" class="mr-3 h-8" alt="Recipes Logo" />
               <span class="brand-title text-2xl">Demo Recipes Hub</span>
             </a>
@@ -19,13 +19,13 @@
           <div class="right-container">
             <ul class="nav-link-container">
                 <li>
-                    <a href="/">Home</a>
+                    <a href="./">Home</a>
                 </li>
                 <li>
-                    <a href="/recipes.html">Recipes</a>
+                    <a href="./recipes.html">Recipes</a>
                 </li>
                 <li>
-                    <a class="text-blue-500" href="/contact.html">Contact</a>
+                    <a class="text-blue-500" href="./contact.html">Contact</a>
                 </li>
             </ul>
           </div>
@@ -39,29 +39,29 @@
           <p class="mx-auto">We're always welcome to hear your thoughts and feedback.</p>
         </div>
         <div class="w-auto">
-          <div class="flex flex-wrap">
+          <form class="contact-form flex flex-wrap">
             <div class="p-2 w-1/2">
               <div>
                 <label for="name" class="text-sm text-gray-600">Full Name</label>
-                <input type="text" id="name" name="name" class="w-full bg-gray-100 rounded border border-gray-300 focus:border-blue-500 focus:bg-white focus:ring-1 focus:ring-blue-200 outline-none text-gray-700 py-1 px-3 resize-none transition-colors duration-200 ease-in-out">
+                <input type="text" id="name" name="name" required class="w-full bg-gray-100 rounded border border-gray-300 focus:border-blue-500 focus:bg-white focus:ring-1 focus:ring-blue-200 outline-none text-gray-700 py-1 px-3 resize-none transition-colors duration-200 ease-in-out">
               </div>
             </div>
             <div class="p-2 w-1/2">
               <div>
                 <label for="email" class="text-sm text-gray-600">Email</label>
-                <input type="email" id="email" name="email" class="w-full bg-gray-100 rounded border border-gray-300 focus:border-blue-500 focus:bg-white focus:ring-1 focus:ring-blue-200 outline-none text-gray-700 py-1 px-3 resize-none transition-colors duration-200 ease-in-out">
+                <input type="email" id="email" name="email" required class="w-full bg-gray-100 rounded border border-gray-300 focus:border-blue-500 focus:bg-white focus:ring-1 focus:ring-blue-200 outline-none text-gray-700 py-1 px-3 resize-none transition-colors duration-200 ease-in-out">
               </div>
             </div>
             <div class="p-2 w-full">
               <div>
                 <label for="message" class="text-sm text-gray-600">Message</label>
-                <textarea id="message" name="message" class="w-full bg-gray-100 rounded border border-gray-300 focus:border-blue-500 focus:bg-white focus:ring-1 focus:ring-blue-200 h-32 outline-none text-gray-700 py-1 px-3 resize-none transition-colors duration-200 ease-in-out"></textarea>
+                <textarea id="message" name="message" required class="w-full bg-gray-100 rounded border border-gray-300 focus:border-blue-500 focus:bg-white focus:ring-1 focus:ring-blue-200 h-32 outline-none text-gray-700 py-1 px-3 resize-none transition-colors duration-200 ease-in-out"></textarea>
               </div>
             </div>
             <div class="p-2 w-full flex justify-center">
-              <button class="py-2 px-6 rounded text-white bg-blue-500 hover:bg-blue-600 active:bg-blue-700">Submit</button>
+              <button class="contact-submit-btn py-2 px-6 rounded text-white bg-blue-500 hover:bg-blue-600 active:bg-blue-700 disabled:bg-gray-400">Submit</button>
             </div>
-          </div>
+          </form>
         </div>
       </div>
     </div>

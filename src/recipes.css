@@ -4,3 +4,39 @@
 
 @import url('./base.css');
 
+.title-container {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    text-align: center;
+}
+
+.category-header-container {
+    display: flex;
+    align-items: center;
+}
+
+.category-title {
+    font-weight: 500;
+}
+
+.recipe-categories-container {
+    display: grid;
+    gap: 0.5rem;
+
+    > a {
+        display: flex;
+        align-items: center;
+        border: 1px solid theme('colors.gray.200');
+        background-color: white;
+    }
+
+    > a:hover {
+        background-color: theme('colors.gray.50');
+    }
+}
+
+.category-list-item {
+    color: theme('colors.gray.900');
+}

@@ -30,32 +30,29 @@
     font-weight: 500;
 }
 
-.categories-container {
-    display: flex;
-    gap: 8px;
-    overflow-x: auto;
+.top-recipes-table {
+    width: 100%;
+    color: theme('colors.gray.600');
+    border: 1px solid theme('colors.gray.300');
+    text-align: center;
 
-    > div {
-        display: flex;
-        flex-direction: column;
-        flex: none;
-        width: 16rem;
-        border: 1px solid theme('colors.gray.300');
+    > thead th {
+        padding: 0.75rem 1.5rem;
+    }
 
-        > h4 {
-            font-weight: 500;
-        }
+    > tbody tr {
+        border-bottom-width: 1px;
+        background-color: white;
+    }
 
-        > p {
-            flex-grow: 1;
-        }
-
-        > a {
-            color: theme('colors.blue.600');
-        }
-
-        > a:hover {
-            text-decoration: underline;
-        }
+    > tbody th {
+        padding: 1rem 1.5rem;
+        color: theme('colors.gray.900');
+        font-weight: 500;
+        white-space: nowrap;
+    }
+    > tbody td {
+        padding: 1rem 1.5rem;
+        white-space: nowrap;
     }
 }

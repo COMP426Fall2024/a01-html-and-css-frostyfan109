@@ -3,3 +3,41 @@
 @tailwind utilities;
 
 @import url('./header.css');
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: theme('colors.gray.50') !important;
+}
+
+.card-list-container {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+
+    > div {
+        display: flex;
+        flex-direction: column;
+        flex: none;
+        width: 16rem;
+        border: 1px solid theme('colors.gray.300');
+
+        > h4 {
+            font-weight: 500;
+        }
+
+        > p {
+            flex-grow: 1;
+        }
+
+        > a {
+            color: theme('colors.blue.600');
+        }
+
+        > a:hover {
+            text-decoration: underline;
+        }
+    }
+}

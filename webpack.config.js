@@ -7,9 +7,9 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 module.exports = {
 	mode: "development",
 	entry: {
-		index: ["./src/index.ts", "./src/index.css"],
-		recipes: ["./src/recipes.ts", "./src/recipes.css"],
-		contact: ["./src/contact.ts", "./src/contact.css"]
+		index: ["./src/index.ts", "./src/index.css", "./src/base.css"],
+		recipes: ["./src/recipes.ts", "./src/recipes.css", "./src/base.css"],
+		contact: ["./src/contact.ts", "./src/contact.css", "./src/base.css"]
 	},
 	output: {
 		path: path.resolve(__dirname, "dist"),
@@ -61,9 +61,13 @@ module.exports = {
 				use: [MiniCssExtractPlugin.loader, "css-loader", "postcss-loader"],
 			},
 			{
-				test: /\.(png|svg|jpg|jpeg|gif)$/i,
+				test: /\.(png|jpg|jpeg|gif)$/i,
 				type: "asset/resource",
-			  }
+			},
+			{
+				test: /\.svg$/i,
+				loader: "svg-inline-loader"
+			}
 		],
 	},
 	plugins: [

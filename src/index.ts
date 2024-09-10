@@ -47,7 +47,7 @@ const createCategoryCard = (category: ICategory) => {
     p.innerText = category.description
     
     const a = document.createElement("a")
-    a.href = `/recipes.html#${ category.name.toLowerCase() }`
+    a.href = `./recipes.html#${ category.name.toLowerCase() }`
     a.innerText = `Explore ${ category.name }`
     
     el.appendChild(title)

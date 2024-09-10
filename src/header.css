@@ -1,0 +1,36 @@
+#header {
+    width: 100%;
+}
+
+#header > nav {
+    background: white;
+}
+
+.nav-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-container {
+    flex-grow: 1;
+}
+
+.brand-link {
+    display: flex;
+    align-items: center;
+
+    > .brand-title {
+        font-weight: 600;
+        white-space: nowrap;
+    }
+}
+
+.nav-link-container {
+    display: flex;
+    align-items: center;
+    
+    > li {
+        padding: 8px;
+    }
+}

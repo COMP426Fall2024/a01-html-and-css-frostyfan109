@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('./base.css');
+
+.introduction-title {
+    font-weight: 500;
+}
+
+.recipes-btn {
+    /* because we are required to use multiple font faces for some? reason */
+    font-family: "Comic Sans MS", "Comic Sans";
+    color: white;
+    display: inline-block;
+    transition: all 300ms ease-in-out;
+}
+
+.recipes-btn:hover {
+    /* background-color: theme('colors.blue.700'); */
+    /* For "set using hex" requirements, use unthemed default. */
+    background-color: #1d4ed8;
+}
+
+.recipes-btn:active {
+    background-color: theme('colors.blue.800') !important;
+}
+
+.category-title {
+    font-weight: 500;
+}
+
+.categories-container {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+
+    > div {
+        display: flex;
+        flex-direction: column;
+        flex: none;
+        width: 16rem;
+        border: 1px solid theme('colors.gray.300');
+
+        > h4 {
+            font-weight: 500;
+        }
+
+        > p {
+            flex-grow: 1;
+        }
+
+        > a {
+            color: theme('colors.blue.600');
+        }
+
+        > a:hover {
+            text-decoration: underline;
+        }
+    }
+}
